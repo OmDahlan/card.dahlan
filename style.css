@@ -1,0 +1,127 @@
+
+body {
+  background: linear-gradient(to bottom right, #f0f0f0, #d9e4f5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.profile-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  max-width: 400px;
+  text-align: center;
+  padding: 25px 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.profile-card h2 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+  color: #333;
+}
+.profile-card .profesi {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.profile-card .quote {
+  font-style: italic;
+  color: #777;
+  margin: 10px 0 15px;
+}
+.profile-card .desc {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.social-icons a {
+  margin: 0 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: grayscale(100%);
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  background: #007BFF;
+  transition: background 0.3s ease;
+}
+.buttons a:hover {
+  background: #0056b3;
+}
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode .profile-card {
+  background: #1f1f1f;
+}
+body.dark-mode .profile-card h2,
+body.dark-mode .profile-card .profesi,
+body.dark-mode .profile-card .quote,
+body.dark-mode .profile-card .desc {
+  color: #e0e0e0;
+}
+.toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input { display: none; }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}

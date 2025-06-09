@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dahlan - Profile Card</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="toggle-theme">
+  <label class="switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
+  </label>
+</div>
+
+<div class="profile-card">
+  <img src="assets/icons/profile.jpg" alt="Foto Dahlan">
+  <h2>Dahlan</h2>
+  <p class="profesi">Young Entrepreneur & Digital Creator</p>
+  <p class="quote">“Transformasi tidak dimulai dari luar, tapi dari cara kita memandang dunia.”</p>
+  <p class="desc">Entrepreneur, content creator, and lifelong learner. Driven by a mission to inspire transformation and build meaningful digital experiences that empower others.</p>
+
+  <div class="social-icons">
+    <a href="https://wa.me/639463359582" target="_blank"><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></a>
+    <a href="https://www.instagram.com/dahlan.space" target="_blank"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+    <a href="https://x.com/DDahlan75?s=09" target="_blank"><img src="assets/icons/x.svg" alt="X"></a>
+    <a href="https://www.linkedin.com/in/dahlan-space" target="_blank"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://id.quora.com/profile/DAHLAN-26" target="_blank"><img src="assets/icons/quora.svg" alt="Quora"></a>
+  </div>
+
+  <div class="buttons">
+    <a href="mailto:hallo@dahlan.web.id" class="contact-btn">Contact</a>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  toggle.addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+</body>
+</html>
